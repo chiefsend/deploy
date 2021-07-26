@@ -1,0 +1,12 @@
+[Unit]
+Description=ChiefSend API Service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+WorkingDirectory=${API_PATH}
+ExecStart=${API_PATH}/chiefsend-api
+
+[Install]
+WantedBy=multi-user.target
