@@ -4,6 +4,7 @@ export PORT=6969
 export DOMAIN=localhost
 export API_PATH=$(pwd)/../api
 export WEB_PATH=$(pwd)/../web
+export ADMIN_PATH=$(pwd)/../admin
 
 # systemd api service
 envsubst < chiefsend.service > /etc/systemd/system/chiefsend.service
